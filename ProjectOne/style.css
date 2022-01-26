@@ -438,11 +438,14 @@ form{
   }
   .title-col h1{
     font-size: 30px;
-    margin-left: 20%;
+    margin-left: 26%;
   }
   .form-col p{
     font-size: 20px;
     margin-left: 8%;
+  }
+  .part-two{
+    margin-bottom: 35px;
   }
   .footer-col{
     width: 100%;
