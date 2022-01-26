@@ -19,12 +19,13 @@
   <div class="navBar">
     <img src="img/colored logo.png" alt="Develop Logo" class="logo">
     <nav>
-      <ul>
+      <ul id="menuItems">
         <li><a href="#">Home</a></li>
         <li><a href="#">About us</a></li>
         <li><a href="#">Contact us</a></li>
       </ul>
     </nav>
+    <i class="fa fa-bars" onclick="menutoggle()"></i>
   </div>
 
   <!--Main section-->
@@ -128,7 +129,7 @@
   <!--Contact section-->
   <section id="contact-section">
     <div class="title-col">
-        <h1>Get in touch<br>with us</h1>
+      <h1>Get in touch<br>with us</h1>
     </div>
     <div class="form-col">
       <p>We will reply to you as soon as possible.</p>
@@ -142,7 +143,57 @@
       </form>
     </div>
   </section>
+  <!--Footer-->
+  <footer id="footer-section">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img src="img/colored logo.png" alt="Develop Logo" class="logo">
+        </div>
+        <div class="footer-col">
+          <h4>Website</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Team</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="socila-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-row">
+        <p>Copyright &copy; 2021 Develop All Rights Reserved.</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!--Script for toggle menu-->
+  <script>
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (menuItems.style.maxHeight == "0px") {
+        menuItems.style.maxHeight = "200px";
+      }
+      else {
+        menuItems.style.maxHeight = "0px";
+      }
+    }
 
+  </script>
 </body>
 
 </html>

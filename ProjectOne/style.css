@@ -11,14 +11,14 @@
   padding-right: 1%;
   display: flex;
   align-items: center;
+  margin: 10px 0;
+}
+.navBar i{
+  color: #0c1753;
+  display: none;
 }
 .logo {
   width: 150px;
-  margin: 30px 0;
-}
-.menubar-icon {
-  width: 25px;
-  cursor: pointer;
 }
 nav {
   flex: 1;
@@ -147,7 +147,7 @@ nav ul li a:hover {
 }
 .img-col ,.text-col{
   flex-basis: 50%;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 .img-col img {
   max-width: 60%;
@@ -171,6 +171,8 @@ nav ul li a:hover {
 }
 .part-two{
   display: flex;
+  margin-top: 60px;
+  margin-bottom: 0%;
 }
 .part-two img{
   max-width: 60%;
@@ -229,10 +231,102 @@ form{
   border: none;
   font-size: 18px;
   cursor: pointer;
+  transition: all 0.8s ease;
+}
+.submit:hover{
+  background: #00a69c;
+}
+/* Footer section */
+#footer-section{
+  margin-top: 2%;
+  height: auto;
+}
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  color: #00a69c;
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  background: #ffe101;
+  height: 2px;
+  box-sizing: border-box;
+  width: 60px;
+}
+.footer-col ul li{
+  list-style: none;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 5px;
+}
+.footer-col ul li a{
+  color: #0c1753;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #00a69c;
+  padding-left: 5px;
+}
+.footer-col .socila-media a{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: #0c1753;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+.footer-col .socila-media a:hover{
+  background: #00a69c;
+}
+.footer-row p{
+  text-align: center;
+  width: 100%;
+  margin: 30px 0 5px 0;
+  color: #0c1753;
+  font-size: 15px;
 }
 
 /* Media */
 @media only screen and (max-width: 768px) {
+  nav ul{
+    position: absolute;
+    top: 59px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.486);
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 10px 50px 10px 0;
+  }
+  nav ul li a{
+    color: #353434;
+    cursor: pointer;
+  }
+  .navBar i{
+    display: block;
+  }
   .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
@@ -272,6 +366,10 @@ form{
   .form-col p{
     margin-left: 27%;
   }
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -300,6 +398,8 @@ form{
     font-size: 20px;
     margin-left: 8%;
   }
-
+  .footer-col{
+    width: 100%;
+  }
   
 }
