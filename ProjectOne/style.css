@@ -47,8 +47,11 @@ nav ul li a:hover {
   height: 550px;
   padding: 50px 0 50px 0;
 }
+.main-row{
+  display: flex;
+}
 .col-1 {
-  flex-basis: 40%;
+  flex-basis: 50%;
   position: relative;
   margin-left: 50px;
 }
@@ -60,6 +63,15 @@ nav ul li a:hover {
   color: white;
   padding-top: 30px;
   font-size: 25px;
+}
+.col-2 {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+.col-2 .image {
+  width: 110%;
 }
 .btn {
   background-color: #ffe101;
@@ -75,15 +87,6 @@ nav ul li a:hover {
 }
 .btn:hover {
   box-shadow: 0 0 10px white;
-}
-.col-2 {
-  position: relative;
-  flex-basis: 60%;
-  display: flex;
-  align-items: center;
-}
-.col-2 .image {
-  width: 90%;
 }
 /* Service section */
 #service-section {
@@ -328,6 +331,34 @@ form{
   .navBar i{
     display: block;
   }
+  #main-section{
+    text-align: center;
+    height: auto;
+  }
+  .main-row{
+    flex-direction: column-reverse;
+  }
+  .col-1, .col-2{
+    flex-basis: 100%;
+  }
+  .col-1{
+    margin-left: 20px;
+  }
+  .col-1 h1 {
+    font-size: 40px;
+  }
+  .col-1 p {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .main-row .col-2 img{
+    max-width: 65%;
+    margin-left: 180px;
+    padding-bottom: 10px;
+  }
+  .btn {
+    margin-top: 20px;
+  }
   .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
@@ -371,9 +402,23 @@ form{
     width: 50%;
     margin-bottom: 30px;
   }
+  .footer-row p{
+    margin-top: -15px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
+  nav ul{
+    background: rgb(255, 255, 255);
+  }
+  .col-1{
+    margin-right: 30px;
+  }
+  .main-row .col-2 img{
+    max-width: 80%;
+    margin-left: 85px;
+    padding-bottom: 10px;
+  }
   .grid {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 50px;
@@ -402,5 +447,7 @@ form{
   .footer-col{
     width: 100%;
   }
-  
+  .footer-row p{
+    margin-top: -20px;
+  }
 }
