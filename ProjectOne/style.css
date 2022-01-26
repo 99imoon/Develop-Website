@@ -441,8 +441,16 @@ form{
     margin-left: 26%;
   }
   .form-col p{
-    font-size: 20px;
-    margin-left: 8%;
+    font-size: 18px;
+    margin-left: 40px;
+  }
+  .form-col input[name=full-name], input[name=city],input[name=subject], input[name=email]{
+    width: 250px;
+    margin-left: -40px;
+  }
+  .form-col textarea, .submit{
+    width: 250px;
+    margin-left: -40px;
   }
   .part-two{
     margin-bottom: 35px;
