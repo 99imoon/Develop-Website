@@ -150,7 +150,7 @@ nav ul li a:hover {
   padding-bottom: 100px;
 }
 .img-col img {
-  width: 60%;
+  max-width: 60%;
 }
 .text-col .text {
   margin-left: 100px;
@@ -169,11 +169,14 @@ nav ul li a:hover {
   padding: 5px;
   margin-left: 30px;
 }
-/*
-#forMedia{
-  display: none;
+.part-two{
+  display: flex;
 }
-*/
+.part-two img{
+  max-width: 60%;
+  margin-left: 80px;
+}
+
 /* Media */
 @media only screen and (max-width: 768px) {
   .grid {
@@ -191,14 +194,13 @@ nav ul li a:hover {
     flex-basis: 100%;
     padding-bottom: 50px;
   }
-  .forNormal{
-    display: none;
+  .part-two{
+    flex-direction: column-reverse;
   }
-  /*
-  #forMedia{
-    display: inline-block;
+  .part-two img{
+    max-width: 100%;
+    margin-left: 10px;
   }
-  */
 }
 
 @media only screen and (max-width: 425px) {
@@ -216,4 +218,5 @@ nav ul li a:hover {
   .text-col{
     font-size: 15px;
   }
+  
 }
